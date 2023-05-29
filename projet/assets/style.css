@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    color: white;
+}
+
+.header h1 {
+    font-family: 'Playfair', serif;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.haut {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: -150px;
+    margin-right: -130px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    background-color: black;
+    border-bottom: solid 2px;
+}
+
+.haut h1 {
+    font-family: 'Playfair', serif;
+    margin-top: -11px;
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 80px;
+    letter-spacing: 10px;
+}
+
+.gauche {
+    display: flex;
+    margin-top: 10px;
+}
+
+.gauche li {
+
+    list-style: none;
+    padding-left: 40px;
+}
+
+.gauche li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gauche i {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.triche {
+    margin-left: -30px;
+}
+
+
+.langue ul{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    position: absolute;
+}
+
+.langue:hover ul {
+    display: block;
+}
+
+.langue ul li {
+    list-style: none;
+}
+
+.langue ul li a {
+    color: black;
+    width: 124px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.langue ul li a:hover {
+    background-color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.langue i:active {
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+
+.droite {
+    display: flex;
+}
+
+.droite li {
+    padding-right: 20px;
+    list-style: none;
+}
+
+.bas {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-right: 20px;
+    font-weight:700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: larger;
+}
+
+.bas li {
+    margin-left: 15px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.bas li a {
+    position: relative;
+}
+
+.bas li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10%;
+    transition: 0.5s;
+}
+
+.bas li a:hover::after {
+    width: 40px;
+}
+
+#login {
+    border-radius: 60px;
+    height: 40px;
+    width: 110px;
+    background-color: black;
+    border: solid 1px gray;
+    font-weight: bolder;
+    color: white;
+}
+
+#login:hover {
+    border: solid white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#Billetterie {
+    height: 40px;
+    width: 110px;
+    background-color:  #008573;
+    border-radius: 60px;
+    border: none;
+    color: white;
+}
+
+#Billetterie:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 133, 115, 0.7);
+    transition: 0.2s;
+    cursor:pointer;
+}
+
+.container {
+    margin-top: -3px;
+    position:relative;
+    z-index:0;
+}
+
+.container { position:relative; }
+
+.overlay {
+    margin-left: 200px;
+    margin-top: 200px;
+    position:absolute;
+    top:0;
+    z-index:1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.billet {
+    height: 50px;
+    width: 270px;
+    background-color:  rgb(0, 133, 115);
+    border-radius: 60px;
+    border: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.billet:hover {
+    background-color: rgba(0, 133, 115, 0.7);
+    text-decoration: underline;
+    transition: 0.2s;
+    cursor:pointer;
+}
+
+.Titre {
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.newwave {
+    content: 'zakdnouzdho';
+}
+
+#cate {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+.oui {
+    margin-right: -100px;
+    margin-top: -70px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i {
+    background: black;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    color: white;
+}
+
+.wrapper i:first-child {
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -23px;
+}
+
+.wrapper .carousel {
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% 3);
+    border-radius: 10px;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+.carousel img:hover {
+    transform: translateY(20px);
+    transition: 0.5s;
+    opacity: 50%;
+}
+
+
+
+
+
+.exemples {
+    background-color: black;
+    color: white;
+   padding-top: 200px;
+   padding-bottom: 60px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container3 {
+    text-align: center;
+
+    display: block;
+}   
+
+.exemples img {
+    width: calc(80% / 3);
+    border-radius: 10%;
+    margin: 10px;
+}
+
+.exemple img:nth-child(2) {
+    margin-top: 60px;
+}
+
+    
+
+
+.titre2 {
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+
+.rapkidz button {
+    width: 20%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #ADD8E6;
+    border-style:initial;
+}
+
+.container3 {
+    display: block;
+}
+
+.container3 img:hover {
+    transform: translateY(-10px);
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.container2 {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 110px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-col {
+    width: 32%;
+    padding: 0 15px;
+    margin-top: 60px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 10px;
+}
+
+.footer-col .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px ;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container4 {
+    margin-left: 400px;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    width: 57%;
+    
+}
+
+.container4 h1 {
+    margin-bottom: 60px;
+    border-bottom: 2px solid ;
+    width: 150%;
+}
+
+#mentions {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+}
+
+#mentions h3 {
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+#mentions:last-child {
+    border: none;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
